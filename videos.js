@@ -1,4 +1,10 @@
-// Videos in display order (sorted by the 01-25 number prefix in the file name).
+// Live listing: set the Drive folder ID and a Google Drive API key (restricted to
+// this site's domain, Drive API only). The folder must be shared "Anyone with the link".
+// While either is empty, the static list below is used instead.
+const DRIVE_FOLDER_ID = "";
+const DRIVE_API_KEY = "";
+
+// Fallback videos in display order (sorted by the 01-25 number prefix in the file name).
 // Each file must be shared as "Anyone with the link - Viewer".
 const VIDEOS = [
   { id: "1Kh5mNjwe7rr551qt1JYDmkYhzBzua8UP", title: "01 Krishna" },
