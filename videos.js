@@ -1,14 +1,20 @@
-// Videos in display order (sorted by the 01-25 number prefix in the file name).
+// Live listing: set the Drive folder ID and a Google Drive API key (restricted to
+// this site's domain, Drive API only). The folder must be shared "Anyone with the link".
+// While either is empty, the static list below is used instead.
+const DRIVE_FOLDER_ID = "";
+const DRIVE_API_KEY = "";
+
+// Fallback videos in display order (sorted by the 01-25 number prefix in the file name).
 // Each file must be shared as "Anyone with the link - Viewer".
 const VIDEOS = [
   { id: "1Kh5mNjwe7rr551qt1JYDmkYhzBzua8UP", title: "01 Krishna" },
   { id: "1RUlAJZfFnuwp8OrvSFjwC3-Cn2YUHwNP", title: "02 Dr Vivan Panchal" },
-  { id: "1vDWcOlVEvhkEDaiz6w3j1nRfaIHjEkV0", title: "03 Bhartmanat Army" },
-  { id: "1JYPzKq3hQLDS8jv2ww61w198l1tQU37e", title: "03 Bhartmanat Army 2" },
-  { id: "1byTO9l_pCcvK18tldtFjh6SjuIg5aC6L", title: "04 Krishana" },
+  { id: "1vDWcOlVEvhkEDaiz6w3j1nRfaIHjEkV0", title: "03 Bharatmata & Army 1" },
+  { id: "1JYPzKq3hQLDS8jv2ww61w198l1tQU37e", title: "03 Bharatmata & Army 2" },
+  { id: "1byTO9l_pCcvK18tldtFjh6SjuIg5aC6L", title: "04 Krishana & Radha" },
   { id: "1OOSdk9xTx6vsnZChUTNalKV82fuzkbYG", title: "05 Ram Lakshman" },
   { id: "1YeP7COd2r4CCkJZOElJEMVYva7mSqBco", title: "06 Khedut Rudra" },
-  { id: "15dbnvh687De7-ik3WURsdkHOIpLa27WL", title: "07 Khodira Anjali" },
+  { id: "15dbnvh687De7-ik3WURsdkHOIpLa27WL", title: "07 Khodiyar-Anjali" },
   { id: "1t2F8IMlnjDXglm1qwMpHQiIuk9n83Rdp", title: "08 Yoga Teacher Mohi" },
   { id: "18tiLZjgeCmiHCMbvuYs_9s1XqtkkmeOq", title: "09 Gangubai Dimple" },
   { id: "1yb7RTHJ0ACx363ObiKBNjSs6l6nizsLY", title: "10 Radhe Krisha" },

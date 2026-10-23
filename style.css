@@ -129,7 +129,25 @@ main { padding: 24px 16px 40px; max-width: 1100px; margin: 0 auto; }
   text-overflow: ellipsis;
 }
 
-.empty { text-align: center; }
+.empty { text-align: center; font-size: 1.1rem; padding: 24px 0; }
+.empty[hidden] { display: none; }
+
+.tapzone {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 64px;
+  z-index: 10;
+}
+
+.nav, .close { transition: opacity 0.25s ease; }
+
+.player.controls-hidden .nav,
+.player.controls-hidden .close {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.player:not(.controls-hidden) .tapzone { display: none; }
 
 .player {
   position: fixed;
